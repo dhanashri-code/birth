@@ -109,14 +109,17 @@
     }
 
     .cake {
-      margin-top: 1.25rem;
-      width: 120px;
-      height: 90px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  margin-top: 1.25rem;
+  width: 140px;              /* slightly wider */
+  height: 110px;
+  position: relative;
+  display: flex;
+  justify-content: center;   /* ensure perfect centering */
+  align-items: flex-end;     /* keep cake anchored at bottom */
+  margin-left: auto;         /* forces true center */
+  margin-right: auto;
+}
+
 
     .cake .plate {
       position: absolute;
